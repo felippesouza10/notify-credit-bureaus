@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=debts_to_notify'
+      - 'POSTGRES_PASSWORD=debts2025'
+      - 'POSTGRES_USER=debtstonotify'
+    ports:
+      - '5432:5432'
