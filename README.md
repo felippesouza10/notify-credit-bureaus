@@ -43,7 +43,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 $ git clone https://github.com/felippesouza10/notify-credit-bureaus.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd bank-transfer
+$ cd notify-credit-bureaus
 
 #Certifique de que o Docker está em execução
 
@@ -53,7 +53,7 @@ Execute a aplicação na sua IDE por meio da classe NotifyCreditBureausApplicati
 ```
 
 ##### Ao executar a aplicação no profile "dev" será criado também:
-- Um container no Docker com o MongoDB na porta 27017.
+- Um container no Docker com o Postgres na porta 27017.
 
 
 
@@ -82,7 +82,7 @@ localhost:8080/swagger-ui/index.html
 ## 💡 Highlights do Desafio
 
 <span style="color:orange"><strong>1</strong></span><span style="color:#f0c665"> - Utilização de Docker Compose integrado
-ao Start da aplicação para disponibilizar instâncias de MongoDB e Wiremock
+ao Start da aplicação para disponibilizar instâncias de Postgres.
 (Em ambiente de desenvolvimento).</span>
 
 <span style="color:orange"><strong>2</strong></span><span style="color:#f0c665"> - O Desenho da solução foi pensado
@@ -91,8 +91,7 @@ utilizando serviços da AWS.</span>
 <span style="color:orange"><strong>3</strong></span><span style="color:#f0c665"> - DebtsController implementado para
 melhor legibilidade e organização, diminuindo drasticamente a complexidade do código.</span>
 
-<span style="color:orange"><strong>4</strong></span><span style="color:#f0c665"> - Utilizado os princípios KISS, YAGNI,
-DRY e SOLID.</span>
+<span style="color:orange"><strong>4</strong></span><span style="color:#f0c665"> - Utilizado os princípios de SOLID.</span>
 
 <span style="color:orange"><strong>5</strong></span><span style="color:#f0c665"> - Utilização de Conventional Commits
 como padrão para os commits.</span>
