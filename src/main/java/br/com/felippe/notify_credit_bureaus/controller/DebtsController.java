@@ -4,6 +4,7 @@ import br.com.felippe.notify_credit_bureaus.controller.dto.DebtRequestDto;
 import br.com.felippe.notify_credit_bureaus.controller.dto.DebtResponseDto;
 import br.com.felippe.notify_credit_bureaus.controller.openapi.DebtsControllerOpenApi;
 import br.com.felippe.notify_credit_bureaus.service.DebtService;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,7 +23,7 @@ public class DebtsController implements DebtsControllerOpenApi {
     }
 
     @PostMapping
-    public ResponseEntity<DebtResponseDto> createDebt(@RequestBody DebtRequestDto dto){
+    public ResponseEntity<DebtResponseDto> createDebt(@RequestBody @Valid DebtRequestDto dto){
         var debtCreated = debtService.create(dto);
         return ResponseEntity.status(HttpStatus.CREATED).body(new DebtResponseDto(debtCreated));
     }
