@@ -14,13 +14,12 @@
 <div align="center">
 
 # Bank Transfer - Itaú
-O objetivo do desafio é desenhar e desenvolver uma solução que permita que os clientes do Itaú consigam realizar Transferência entre contas.
+O objetivo do desafio é desenhar e desenvolver uma solução que permita a negativação junto aos Biros de credito.
 <br>Essa solução precisa ser resiliente, ter alta disponibilidade e de fácil evolução/manutenção.
 
 ## 💻 Sobre o projeto
 
-Serviço responsável por realizar transferências bancárias validando informações na "API Cadastro" e "API Contas" e por
-fim, notificar o Bacen por meio da "API Bacen"
+Serviço responsável por enviar e processar as dividas junto aos biros de credito.
 
 </div>
 
@@ -70,13 +69,13 @@ localhost:8080/swagger-ui/index.html
 - Java 21
 - Maven
 - Lombok
-- Spring Boot 3.2.4
+- Spring Boot 3.3.8
 - Spring OpenFeign
 - Spring Boot Docker Compose (apenas no profile dev)
 - Spring Validation
 - Spring Doc (Swagger) 2.5.0
 - Tomcat (Integrado ao Spring Boot)
-- MongoDB
+- Postgres
 - Resilience4j
 
 ## 💡 Highlights do Desafio
